@@ -1,0 +1,56 @@
+
+
+
+* {
+    font-family: "Liberation Sans narrow";
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.card {
+    border: 2px solid #cfcfcf;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: inset 0 0 0 5px white;
+}
+
+.buttons, .content {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 15%;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.Nav-buttons, .Func-buttons {
+    border: none;
+
+    font-size: 20px;
+    font-weight: 300;
+    color: #646464;
+}
+
+.Func-buttons{
+    color: #050505;
+    font-weight: bold;
+    transform: translateX(-10px);
+}
