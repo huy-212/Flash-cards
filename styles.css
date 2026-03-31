@@ -43,7 +43,13 @@ body {
     text-align: center;
     align-items: center;
     font-size: 5vh;
+    transition: 0.25s;
 }
+
+.back {
+    transform: rotateY(90deg);
+}
+
 
 .buttons {
     display: flex;

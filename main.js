@@ -38,7 +38,7 @@ btn.innerText = showText;
 //For mouse
 btn.addEventListener("click", function() {
     isShowingAnswer = !isShowingAnswer;
-    update();
+    flip();
 });
 
 next.addEventListener("click", function() {
@@ -61,8 +61,12 @@ document.addEventListener("keydown", function(event){
 
     if (event.code === "Space") {
         isShowingAnswer = !isShowingAnswer;
-        update();
+        flip();
     }
+});
+
+text.addEventListener("animationed", () =>{
+    console.log("done")
 });
 
 function update() {
@@ -73,7 +77,14 @@ function update() {
         text.innerText = cards[questionIndex].question;
         btn.innerText = showText;
     }
+}
 
+function flip() {
+    text.classList.toggle("back");
+    setTimeout(function(){
+        update();
+        text.classList.toggle("back");
+    }, 250);
 }
 
 function nextFunc() {
