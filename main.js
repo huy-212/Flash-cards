@@ -23,6 +23,10 @@ let cards = [
     {
         question: "Red or Blue?",
         answer: "Blue team!"
+    } ,
+    {
+        question: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius assumenda dolorum et ad dolores minus. Ratione, dolorum obcaecati. Odio aperiam sequi natus eveniet illo vel totam quasi repudiandae in culpa.",
+        answer: "bubibibi"
     }
 ];
 

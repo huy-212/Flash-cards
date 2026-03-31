@@ -7,17 +7,25 @@
 }
 
 body {
-    margin-top: 10px;
-    margin-bottom: 20%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     border: 2px solid #cfcfcf;
     border-radius: 10px;
-    padding: 5px;
     box-shadow: inset 0 0 0 5px white;
+    padding: 5px;
+    height: 60%;
+    width: 90%;
 }
 
 .buttons, .content {
@@ -26,12 +34,14 @@ body {
 }
 
 .content {
+    flex: 1;
     display: flex;
     justify-content: center;
     margin: 0;
     margin-bottom: 5px;
-    padding: 15%;
+    padding: 20px;
     text-align: center;
+    align-items: center;
 }
 
 .buttons {
@@ -53,4 +63,11 @@ body {
     color: #050505;
     font-weight: bold;
     transform: translateX(-10px);
+}
+
+.title {
+    margin: 5%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    align-self: flex-start;
 }
